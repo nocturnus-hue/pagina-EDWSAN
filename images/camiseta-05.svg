@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19131f"/><stop offset=".55" stop-color="#09080b"/><stop offset="1" stop-color="#2a0b3d"/>
+    </linearGradient>
+    <radialGradient id="r"><stop stop-color="#a83dff" stop-opacity=".65"/><stop offset="1" stop-color="#a83dff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="900" height="1000" fill="url(#g)"/>
+  <circle cx="670" cy="250" r="280" fill="url(#r)"/>
+  <g transform="translate(225 180)">
+    <path d="M150 30 225 0 300 70 375 0l75 30 125 120-90 85-48-75v460H138V160l-48 75-90-85z" fill="#08080a" stroke="#a83dff" stroke-width="4"/>
+    <path d="M180 30Q225 90 270 30" fill="none" stroke="#a83dff" stroke-width="3"/>
+    <text x="225" y="320" fill="#fff" text-anchor="middle" font-family="Arial" font-weight="900" font-size="38" letter-spacing="8">EDWSAN</text>
+    <text x="225" y="365" fill="#b55aff" text-anchor="middle" font-family="Arial" font-size="16" letter-spacing="5">EDITION X</text>
+  </g>
+  <text x="55" y="910" fill="#777" font-family="Arial" font-size="18" letter-spacing="4">DROP / 05</text>
+  <text x="845" y="910" fill="#c15cff" text-anchor="end" font-family="Arial" font-size="18">70.000 COP</text>
+</svg>
