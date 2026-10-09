@@ -64,3 +64,7 @@ Para una tienda real, podemos conectar el formulario a Supabase/Firebase u otro 
 - Tarjetas de reseñas con movimiento sutil.
 - Botón de WhatsApp con pulso.
 - La animación se reduce automáticamente si el dispositivo tiene activado "reducir movimiento".
+
+
+## Logo oficial
+La imagen del logo está en `images/edwsan-logo.png`. Se muestra en el encabezado superior y en el pie de página. Para cambiarla, reemplaza ese archivo manteniendo el mismo nombre.
