@@ -68,3 +68,16 @@ Para una tienda real, podemos conectar el formulario a Supabase/Firebase u otro 
 
 ## Logo oficial
 La imagen del logo está en `images/edwsan-logo.png`. Se muestra en el encabezado superior y en el pie de página. Para cambiarla, reemplaza ese archivo manteniendo el mismo nombre.
+
+## Contacto configurado
+- WhatsApp principal en botones y pedidos: +57 324 638 1572
+- WhatsApp adicional en la sección Contacto: +57 311 845 9220
+- Correo: edwtiagorizoochoa@gmail.com
+
+El logo de `images/edwsan-logo.png` está preparado con el fondo negro transparente.
+
+
+## Camiseta EDWSAN Tactical
+La imagen enviada está guardada en `images/camiseta-edwsan-tactical.jpg` y se muestra en la portada. Reemplaza ese archivo manteniendo el nombre para actualizar la foto.
+
+Imagen de campaña con modelo: `images/modelo-edwsan-tactical.png`. La foto original de producto se conserva como `images/camiseta-edwsan-tactical.jpg`.
