@@ -4,7 +4,7 @@
 // Formato internacional SIN +, espacios ni guiones.
 // Ejemplo Colombia: 573001234567
 // ================================
-const WHATSAPP_NUMBER = "573001234567";
+const WHATSAPP_NUMBER = "573246381572";
 
 const waMessage = (product = "") =>
   encodeURIComponent(
