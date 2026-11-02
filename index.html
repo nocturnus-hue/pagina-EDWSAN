@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EDWSAN — camisetas estampadas para hombre. Diseños originales, estilo urbano y esencia propia.">
-  <title>EDWSAN — Wear Your Identity</title>
+  <meta name="description" content="EDWSAN — viste tu identidad. Streetwear con estética espacial, detalles cromados y personalidad propia.">
+  <meta name="theme-color" content="#050507">
+  <title>EDWSAN — Viste tu identidad</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
 
   <header class="site-header">
     <a class="brand brand-logo" href="#inicio" aria-label="EDWSAN inicio">
-      <img src="images/edwsan-logo.png" alt="Logo oficial de EDWSAN">
+      <img src="images/edwsan-logo-cromado.jpg" alt="Logo oficial de EDWSAN">
     </a>
 
     <nav id="nav">
@@ -23,18 +24,19 @@
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <div class="header-tools"><button class="music-toggle" id="musicToggle" type="button" aria-label="Activar música" aria-pressed="false"><span class="music-icon">♫</span><span class="music-label">ACTIVAR SONIDO</span></button><button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button></div>
   </header>
 
   <main>
     <section class="hero" id="inicio">
       <div class="hero-grid"></div>
+      <div class="hero-stars" aria-hidden="true"></div>
       <div class="hero-copy reveal">
-        <p class="eyebrow">EDWSAN / EST. 2026</p>
+        <p class="eyebrow">INDEPENDENT STREETWEAR · EST. 2026</p>
         <h1>VISTE TU<br><span>IDENTIDAD.</span></h1>
         <p class="hero-text">
-          Camisetas para hombre con estampados que no buscan encajar.
-          <strong>Buscan representar quién eres.</strong>
+          Diseños con carácter, estética urbana y detalles que hablan por ti.
+          <strong>No sigas el estilo. Crea el tuyo.</strong>
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#productos">VER COLECCIÓN <span>↗</span></a>
@@ -58,6 +60,8 @@
 
       <div class="scroll-cue">SCROLL <span>↓</span></div>
     </section>
+
+    <section class="collection-intro" aria-label="Colecciones EDWSAN"><a href="#bros" class="collection-tile"><span>01 / DUO DROP</span><strong>BROS<br>COLLECTION</strong><i>DISEÑOS QUE CONECTAN ↗</i></a><a href="#individual" class="collection-tile"><span>02 / SOLO DROP</span><strong>INDIVIDUAL<br>COLLECTION</strong><i>IDENTIDAD PROPIA ↗</i></a></section>
 
     <div class="ticker">
       <div>EDWSAN — ORIGINAL DESIGNS — STREET ESSENCE — EDWSAN — ORIGINAL DESIGNS — STREET ESSENCE —</div>
@@ -99,9 +103,10 @@
         <p>Reemplaza las imágenes de la carpeta <b>images</b> por tus propias fotos.</p>
       </div>
 
+      <div class="collection-heading" id="bros"><span>01 — PARA DOS</span><h3>BROS <em>COLLECTION</em></h3><p>Dos estilos, una misma conexión.</p></div>
       <div class="products-grid">
-        <article class="product-card reveal">
-          <div class="product-image"><img src="images/camiseta-edwsan-tactical.jpg" alt="Camiseta EDWSAN 01"></div>
+        <article class="product-card reveal" data-collection="bros">
+          <div class="product-image"><img src="images/camiseta-01.svg" alt="Camiseta EDWSAN 01"></div>
           <div class="product-info">
             <div><span class="product-code">EDW-001</span><h3>VOID SIGNATURE</h3></div>
             <strong>$40.000 COP</strong>
@@ -118,6 +123,9 @@
           <a class="product-wa" data-product="NIGHT RUNNER" href="#">Pedir por WhatsApp ↗</a>
         </article>
 
+      </div>
+      <div class="collection-heading individual-heading" id="individual"><span>02 — PARA TI</span><h3>INDIVIDUAL <em>COLLECTION</em></h3><p>Una pieza. Tu propia identidad.</p></div>
+      <div class="products-grid">
         <article class="product-card reveal">
           <div class="product-image"><img src="images/camiseta-03.svg" alt="Camiseta EDWSAN 03"></div>
           <div class="product-info">
@@ -227,12 +235,13 @@
 
   <footer>
     <a class="brand brand-logo footer-brand" href="#inicio" aria-label="EDWSAN inicio">
-      <img src="images/edwsan-logo.png" alt="Logo oficial de EDWSAN">
+      <img src="images/edwsan-logo-cromado.jpg" alt="Logo oficial de EDWSAN">
     </a>
     <p>© 2026 EDWSAN. Todos los derechos reservados.</p>
     <a href="#inicio">VOLVER ARRIBA ↑</a>
   </footer>
 
+  <audio id="backgroundMusic" preload="none" loop playsinline><source src="audio/edwsan-house.mp3" type="audio/mpeg"></audio>
   <script src="script.js"></script>
 </body>
 </html>
