@@ -30,7 +30,7 @@ setWhatsAppLinks();
 // Menú móvil
 const menuBtn = document.querySelector(".menu-btn");
 const nav = document.querySelector("nav");
-menuBtn.addEventListener("click", () => {
+menuBtn?.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
   menuBtn.setAttribute("aria-expanded", open);
 });
@@ -191,4 +191,21 @@ if (window.matchMedia("(pointer:fine)").matches) {
       shirt.style.transform = "";
     });
   }
+}
+
+
+// Reproductor ambiental EDWSAN. No inicia solo: el visitante decide activarlo.
+const music = document.getElementById("backgroundMusic");
+const musicToggle = document.getElementById("musicToggle");
+if (music && musicToggle) {
+  music.volume = 0.22;
+  musicToggle.addEventListener("click", async () => {
+    if (music.paused) {
+      try { await music.play(); musicToggle.classList.add("is-playing"); musicToggle.setAttribute("aria-pressed","true"); musicToggle.querySelector(".music-label").textContent = "SONIDO ACTIVADO"; musicToggle.setAttribute("aria-label","Pausar música"); }
+      catch (error) { musicToggle.querySelector(".music-label").textContent = "AÑADE EL MP3"; }
+    } else {
+      music.pause(); musicToggle.classList.remove("is-playing"); musicToggle.setAttribute("aria-pressed","false"); musicToggle.querySelector(".music-label").textContent = "ACTIVAR SONIDO"; musicToggle.setAttribute("aria-label","Activar música");
+    }
+  });
+  music.addEventListener("ended", () => { music.currentTime = 0; });
 }
